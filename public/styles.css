@@ -1,0 +1,78 @@
+body {
+  background: #eee;
+  overflow-y: scroll;
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #e22756f1;
+  margin: auto -16px;
+  padding: 0px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.navbar-dark .navbar-brand{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+
+}
+
+
+
+
+
+
+
+.create-header {
+  display: flex;
+justify-content: space-between;
+  padding: 20px 0;
+  width: 1000px;
+  margin: 30px auto 20px auto;
+  
+ 
+  
+}
+
+.content-header {
+  background-color: #FFF;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index:9999;
+  
+}
+
+
+
+.set-title input ,
+.input-card input{
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+.set-title, .input-card{
+  position: relative;
+  width: 1000px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+
+
