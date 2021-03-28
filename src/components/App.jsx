@@ -5,12 +5,26 @@ import Header from "./Header";
 import CreateCardSet from "./CreateCardSet";
 import InputCard from "./InputCard";
 import InputTitle from "./InputTitle";
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles'
+
 
 
 const App = () => {
-  const [cards, setCards] = useState([
+  const useStyles = makeStyles({
+    root: {
+      margin: "auto"
 
+    },
+  });
+
+  const classes = useStyles();
+
+  const [cards, setCards] = useState([
+    
   ]);
+  
+
 
   const addCards = (newCard) => {
     setCards(prevCards => {
@@ -35,7 +49,9 @@ const App = () => {
         <form>
           <CreateCardSet />
           <InputTitle />
+          
           {cards.map((cardItem, index) => {
+            
             return (
               <InputCard
                 key={index}
@@ -45,7 +61,15 @@ const App = () => {
           })}
           
         </form>
-        <button onClick={addCards}>addCards</button>
+        
+        <div className='add-button'>
+          <Button className={classes.root} variant="contained" color="secondary" onClick={addCards}>+ addCards</Button>
+        </div>
+        
+        
+        
+        
+        
 
       </div>
 

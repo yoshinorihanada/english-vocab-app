@@ -26,7 +26,9 @@ header {
 }
 
 
-
+.input-card {
+  position: relative;
+}
 
 
 
@@ -49,7 +51,9 @@ justify-content: space-between;
   top: 0;
   z-index:9999;
   
+
 }
+
 
 
 
@@ -62,6 +66,7 @@ justify-content: space-between;
   font-size: 1.2em;
   font-family: inherit;
   resize: none;
+  position: relative;
 }
 
 .set-title, .input-card{
@@ -75,4 +80,19 @@ justify-content: space-between;
 }
 
 
+.input-card button {
+  position: absolute;
+  float: right;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  top: 7px;
+  right: 15px;
+}
 
+.add-button {
+  display: flex;
+  align-items: center;
+}

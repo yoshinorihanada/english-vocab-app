@@ -1,4 +1,5 @@
 import React from "react";
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const InputCard = (props) => {
     function handleClick(event) {
@@ -16,7 +17,7 @@ const InputCard = (props) => {
                 name="definition"
                 placeholder='Definition'
             />
-            <button onClick={handleClick}>DELETE</button>
+            <button clasName="deleteBtn" onClick={handleClick}><DeleteIcon></DeleteIcon></button>
         
             
         </div>
